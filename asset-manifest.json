@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/stockapp-site/static/css/main.3fb41e12.css",
-    "main.js": "/stockapp-site/static/js/main.e8c19052.js",
+    "main.css": "/stockapp-site/static/css/main.a047d544.css",
+    "main.js": "/stockapp-site/static/js/main.b0d364a8.js",
     "static/media/primeicons.svg": "/stockapp-site/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/primeicons.eot": "/stockapp-site/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "/stockapp-site/static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "/stockapp-site/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
     "static/media/primeicons.woff2": "/stockapp-site/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "index.html": "/stockapp-site/index.html",
-    "main.3fb41e12.css.map": "/stockapp-site/static/css/main.3fb41e12.css.map",
-    "main.e8c19052.js.map": "/stockapp-site/static/js/main.e8c19052.js.map"
+    "main.a047d544.css.map": "/stockapp-site/static/css/main.a047d544.css.map",
+    "main.b0d364a8.js.map": "/stockapp-site/static/js/main.b0d364a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fb41e12.css",
-    "static/js/main.e8c19052.js"
+    "static/css/main.a047d544.css",
+    "static/js/main.b0d364a8.js"
   ]
 }
