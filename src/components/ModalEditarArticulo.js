@@ -69,7 +69,7 @@ const ModalEditarArticulo = ({ articulo, actualizarArticulo, eliminarArticulo, o
                 </div>
                 <div className="p-field">
                     <label htmlFor="precio">Precio</label>
-                    <InputNumber id="precio" value={precio} onValueChange={(e) => setPrecio(e.value)} mode="currency" currency="USD" />
+                    <InputNumber id="precio" value={precio} onValueChange={(e) => setPrecio(e.value)} />
                 </div>
                 <div className="p-field">
                     <label htmlFor="proveedor">Proveedor</label>

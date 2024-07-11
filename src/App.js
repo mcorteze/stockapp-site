@@ -91,7 +91,7 @@ const App = () => {
                     </button>
                 </div>
                 <div style={{ backgroundColor: 'rgb(91, 6, 114)', color: 'rgb(226, 206, 246)', padding: '20px', textAlign: 'center' }}>
-                    <p>Hecho por el chancho</p>
+                    <p>KYM</p>
                 </div>
             </footer>
         </div>
