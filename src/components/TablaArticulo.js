@@ -38,9 +38,9 @@ const TablaArticulo = ({ articulos, setSelectedArticulo, setEditingArticulo }) =
             >
                 <Column field="nombre" header="Nombre" sortable></Column>
                 <Column field="precio" header="Precio" sortable></Column>
-                <Column field="proveedor" header="Proveedor" sortable></Column>
                 <Column field="stock" header="Stock" sortable></Column>
                 <Column field="unidad" header="Unidad" sortable></Column>
+                <Column field="proveedor" header="Proveedor" sortable></Column>
                 <Column body={actionBodyTemplate}></Column>
             </DataTable>
         </div>
