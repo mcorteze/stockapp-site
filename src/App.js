@@ -70,6 +70,7 @@ const App = () => {
                     <ModalEditarStock
                         articulo={selectedArticulo}
                         actualizarStock={actualizarStock}
+                        eliminarArticulo={eliminarArticulo}
                         onHide={() => setSelectedArticulo(null)}
                     />
                 )}
@@ -77,7 +78,6 @@ const App = () => {
                     <ModalEditarArticulo
                         articulo={editingArticulo}
                         actualizarArticulo={actualizarArticulo}
-                        eliminarArticulo={eliminarArticulo}
                         onHide={() => setEditingArticulo(null)}
                     />
                 )}

@@ -4,7 +4,7 @@ import { Button } from 'primereact/button';
 import { InputNumber } from 'primereact/inputnumber';
 import './ModalEditarStock.css';
 
-const ModalEditarStock = ({ articulo, actualizarStock, onHide }) => {
+const ModalEditarStock = ({ articulo, actualizarStock, eliminarArticulo, onHide }) => {
     const [nuevoStock, setNuevoStock] = useState(articulo.stock);
 
     useEffect(() => {
@@ -16,6 +16,13 @@ const ModalEditarStock = ({ articulo, actualizarStock, onHide }) => {
         onHide();
     };
 
+    const confirmarEliminacion = () => {
+        if (window.confirm(`¿Seguro que deseas eliminar el artículo ${articulo.nombre}?`)) {
+            eliminarArticulo(articulo.id);
+            onHide();
+        }
+    };
+
     return (
         <Dialog header={`Editar Stock de ${articulo.nombre}`} visible={true} style={{ width: '50vw' }} onHide={onHide}>
             <div className="p-fluid">
@@ -23,7 +30,8 @@ const ModalEditarStock = ({ articulo, actualizarStock, onHide }) => {
                     <label htmlFor="stock">Stock</label>
                     <InputNumber id="stock" value={nuevoStock} onValueChange={(e) => setNuevoStock(e.value)} />
                 </div>
-                <Button label="Actualizar" icon="pi pi-check" onClick={handleSubmit} />
+                <Button label="Actualizar" icon="pi pi-check" className='btn-actualizar' onClick={handleSubmit} />
+                <Button label="Eliminar Artículo" icon="pi pi-trash" className="btn-eliminar p-button-danger" style={{ backgroundColor: 'red'}} onClick={confirmarEliminacion} />
             </div>
         </Dialog>
     );
