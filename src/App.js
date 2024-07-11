@@ -51,15 +51,9 @@ const App = () => {
     return (
         <div id="canvas">
             <header id="header">
-                Titulo de la aplicacion
+                Control de Stock
             </header>
             <section id="contenido">
-                <div className="toolbar">
-                    <button onClick={descargarData} className="p-button p-component p-button-success">
-                        <span className="p-button-icon p-c pi pi-download"></span>
-                        <span className="p-button-label p-c">Descargar Data</span>
-                    </button>
-                </div>
                 <ModalAgregar agregarArticulo={agregarArticulo} />
                 <TablaArticulo
                     articulos={articulos}
@@ -81,9 +75,16 @@ const App = () => {
                     />
                 )}
             </section>
+
             <footer id="footer">
-                <div style={{ backgroundColor: '#f0f0f0', padding: '20px', textAlign: 'center' }}>
-                    <p>Pie de página - Derechos reservados © 2024</p>
+                <div className="toolbar">
+                    <button onClick={descargarData} className="p-button p-component p-button-success">
+                        <span className="p-button-icon p-c pi pi-download"></span>
+                        <span className="p-button-label p-c">Descargar Data</span>
+                    </button>
+                </div>
+                <div style={{ backgroundColor: 'rgb(91, 6, 114)', color: 'rgb(226, 206, 246)', padding: '20px', textAlign: 'center' }}>
+                    <p>Hecho por el chancho</p>
                 </div>
             </footer>
         </div>

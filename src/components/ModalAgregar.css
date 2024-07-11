@@ -1,4 +1,8 @@
 /* Estilos generales para el modal */
+.divmodalagregar {
+margin-bottom: 10px;
+}
+
 .p-dialog .p-dialog-content {
     display: flex;
     flex-direction: column;

@@ -57,8 +57,8 @@ const ModalAgregar = ({ agregarArticulo }) => {
     };
 
     return (
-        <>
-            <Button label="+" icon="pi pi-plus" onClick={() => setVisible(true)} />
+        <div className='divmodalagregar'>
+            <Button label="Agregar nuevo artículo" icon="pi pi-plus" onClick={() => setVisible(true)} />
             <Dialog header="Agregar Artículo" visible={visible} style={{ width: '50vw' }} onHide={() => setVisible(false)}>
                 <div className="p-fluid">
                     <div className="p-field">
@@ -84,7 +84,7 @@ const ModalAgregar = ({ agregarArticulo }) => {
                 </div>
                 <Button label="Agregar" icon="pi pi-check" onClick={handleSubmit} />
             </Dialog>
-        </>
+        </div>
     );
 };
 

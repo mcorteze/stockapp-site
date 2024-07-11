@@ -1,6 +1,6 @@
 /* Estilos generales para la tabla */
 .p-datatable {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 /* Estilos específicos para móviles */
@@ -24,6 +24,10 @@
 
     .p-button {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0px !important;
+        padding: 8px;
+        background: rgb(175, 80, 229);
+        border: none;
+        
     }
 }

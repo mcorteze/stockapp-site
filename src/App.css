@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
   font-family: Arial, sans-serif;
 }
 
 #header {
-  background-color: #007ad9;
+  background-color: rgb(91, 6, 114);
   color: white;
   padding: 10px;
   text-align: center;
@@ -21,7 +23,7 @@
 }
 
 #footer {
-  background-color: #f0f0f0;
+  background-color: rgb(91, 6, 114);
   padding: 10px;
   text-align: center;
 }

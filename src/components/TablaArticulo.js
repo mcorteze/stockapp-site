@@ -19,7 +19,7 @@ const TablaArticulo = ({ articulos, setSelectedArticulo, setEditingArticulo }) =
     const actionBodyTemplate = (rowData) => {
         return (
             <React.Fragment>
-                <Button icon="pi pi-pencil" className="p-button-rounded p-button-success p-mr-2" onClick={() => onEditButtonClick(rowData)} />
+                <Button icon="pi pi-pencil" className="btn-circular p-button-rounded p-button-success p-mr-2" onClick={() => onEditButtonClick(rowData)} />
             </React.Fragment>
         );
     };

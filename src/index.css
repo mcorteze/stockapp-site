@@ -3,15 +3,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background: rgb(91, 6, 114);
   }
   
   /* Estilo para el contenedor principal */
   #root {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
+    align-items:baseline;
+    height: 100vh;    
   }
   
   /* Ajustes adicionales según necesidades */
