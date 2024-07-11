@@ -36,7 +36,6 @@ const ModalAgregar = ({ agregarArticulo }) => {
         { label: 'Metro', value: 'metro' },
         { label: 'Centímetro', value: 'centimetro' },
     ];
-    
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -67,7 +66,7 @@ const ModalAgregar = ({ agregarArticulo }) => {
                     </div>
                     <div className="p-field">
                         <label htmlFor="precio">Precio</label>
-                        <InputNumber id="precio" name="precio" value={nuevoArticulo.precio} onValueChange={(e) => setNuevoArticulo({ ...nuevoArticulo, precio: e.value })} mode="currency" currency="USD" locale="en-US" />
+                        <InputNumber id="precio" name="precio" value={nuevoArticulo.precio} onValueChange={(e) => setNuevoArticulo({ ...nuevoArticulo, precio: e.value })} />
                     </div>
                     <div className="p-field">
                         <label htmlFor="proveedor">Proveedor</label>

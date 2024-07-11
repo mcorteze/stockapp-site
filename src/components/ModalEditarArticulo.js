@@ -6,7 +6,7 @@ import { InputNumber } from 'primereact/inputnumber';
 import { Dropdown } from 'primereact/dropdown';
 import './ModalEditarArticulo.css';
 
-const ModalEditarArticulo = ({ articulo, actualizarArticulo, onHide }) => {
+const ModalEditarArticulo = ({ articulo, actualizarArticulo, eliminarArticulo, onHide }) => {
     const [nombre, setNombre] = useState(articulo.nombre);
     const [precio, setPrecio] = useState(articulo.precio);
     const [proveedor, setProveedor] = useState(articulo.proveedor);
@@ -32,6 +32,13 @@ const ModalEditarArticulo = ({ articulo, actualizarArticulo, onHide }) => {
         };
         actualizarArticulo(articuloActualizado);
         onHide();
+    };
+
+    const confirmarEliminacion = () => {
+        if (window.confirm(`¿Seguro que deseas eliminar el artículo ${articulo.nombre}?`)) {
+            eliminarArticulo(articulo.id);
+            onHide();
+        }
     };
 
     const unidades = [
@@ -76,7 +83,12 @@ const ModalEditarArticulo = ({ articulo, actualizarArticulo, onHide }) => {
                     <label htmlFor="unidad">Unidad</label>
                     <Dropdown id="unidad" value={unidad} options={unidades} onChange={(e) => setUnidad(e.value)} />
                 </div>
-                <Button label="Actualizar" icon="pi pi-check" onClick={handleSubmit} />
+                <div className="p-field">
+                    <Button label="Eliminar" icon="pi pi-trash" className="p-button-danger" onClick={confirmarEliminacion} />
+                </div>
+                <div className="p-field">
+                    <Button label="Actualizar" icon="pi pi-check" onClick={handleSubmit} />
+                </div>
             </div>
         </Dialog>
     );

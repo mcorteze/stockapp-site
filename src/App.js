@@ -43,6 +43,12 @@ const App = () => {
         setArticulos(nuevosArticulos);
     };
 
+    const eliminarArticulo = (id) => {
+        const nuevosArticulos = articulos.filter((articulo) => articulo.id !== id);
+        setArticulos(nuevosArticulos);
+        localStorage.setItem('articulos', JSON.stringify(nuevosArticulos));
+    };
+
     const descargarData = () => {
         const blob = new Blob([JSON.stringify(articulos, null, 2)], { type: 'application/json' });
         saveAs(blob, 'articulos.json');
@@ -71,6 +77,7 @@ const App = () => {
                     <ModalEditarArticulo
                         articulo={editingArticulo}
                         actualizarArticulo={actualizarArticulo}
+                        eliminarArticulo={eliminarArticulo}
                         onHide={() => setEditingArticulo(null)}
                     />
                 )}
