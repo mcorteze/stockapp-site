@@ -1,0 +1,18 @@
+/* Reset de estilos básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para el contenedor principal */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* Ajustes adicionales según necesidades */
+  
